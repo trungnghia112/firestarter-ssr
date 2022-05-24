@@ -1,0 +1,12 @@
+<div class="card mx-auto" style="width: 21rem;">
+    <img [src]="song.images.background" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{ song.title }}</h5>
+        <p class="card-text">{{ song.subtitle }}</p>
+        <audio controls class="w-100">
+            <source [src]="song.hub.actions[1].uri" type="audio/ogg">
+            <source [src]="song.hub.actions[1].uri" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+</div>

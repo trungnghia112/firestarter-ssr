@@ -50,7 +50,9 @@
       "rewrites": [
         {
           "source": "**",
-          "function": "ssr_firestarter"
+          "run": {
+            "serviceId": "ssr-firestarter"
+          }
         }
       ]
     }

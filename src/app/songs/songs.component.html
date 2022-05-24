@@ -1,0 +1,13 @@
+<div class="container py-4 mb-4">
+    <div *ngIf="songs$ | async as songs" class="row row-cols-1 row-cols-md-4 g-4">
+        <div *ngFor="let song of songs" class="col">
+            <a [routerLink]="['/songs', song.key]" href="#" class="card text-body text-decoration-none">
+                <img [src]="song.images.background" class="card-img-top" alt="{{ song.title }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ song.title }}</h5>
+                    <p class="card-text">{{ song.subtitle }}</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
