@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "firestarter-646f3"
+  },
+  "targets": {
+    "firestarter-646f3": {
+      "hosting": {
+        "firestarter": [
+          "firestarter-646f3"
+        ]
+      }
+    }
+  }
+}
