@@ -188,17 +188,17 @@
         "deploy": {
           "builder": "@angular/fire:deploy",
           "options": {
-            "ssr": "cloud-run",
+            "ssr": "cloud-functions",
             "prerender": true,
             "firebaseProject": "firestarter-646f3",
             "firebaseHostingSite": "firestarter-646f3",
-            "functionName": "ssr-firestarter",
-            "functionsNodeVersion": "16.15",
+            "functionName": "ssr_firestarter",
+            "functionsNodeVersion": "16",
             "region": "us-central1",
             "browserTarget": "firestarter:build:production",
             "serverTarget": "firestarter:server:production",
             "prerenderTarget": "firestarter:prerender:production",
-            "outputPath": "dist/firestarter/run"
+            "outputPath": "dist/firestarter/functions"
           }
         }
       }
